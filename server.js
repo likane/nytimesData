@@ -7,6 +7,8 @@ var request = require('request');
 var cheerio = require('cheerio');
 var Promise = require('bluebird');
 
+var Article = require('./models/Article.js')
+
 mongoose.Promise = Promise;
 
 //init express

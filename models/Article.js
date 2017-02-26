@@ -11,11 +11,11 @@ var ArticleSchema = new Schema({
 	},
 
 	date: {
-		type: String;
+		type: String
 	},
 
 	url: {
-		type: String
+		type: String,
 		required: true
 	}
 

@@ -6,6 +6,7 @@ var mongoose = require('mongoose');
 var request = require('request');
 var cheerio = require('cheerio');
 var Promise = require('bluebird');
+var React = require('react');
 
 var Article = require('./models/Article.js')
 

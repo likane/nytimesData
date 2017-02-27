@@ -38,6 +38,17 @@ db.once('open', function() {
 	console.log('Mongoose connection successful');
 });
 
+app.get('/', function(request, result){
+	result.send('./public/index.html');
+})
+
+app.get('/scrape', function(request, result) {
+	request('https://www.nytimes.com/', function(error, response, html) {
+		var $ = cheerio.load(html);
+		
+	})
+})
+
 //List on port 27017
 app.listen(27017, function() {
 	console.log("app running on port 27017");

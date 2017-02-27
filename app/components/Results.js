@@ -12,7 +12,11 @@ var Results = React.createClass({
 
 					<div className="panel panel-default">
   						<div className="panel-body">
-    						Basic panel example
+    						{this.props.searchResults.map(function(search, i){
+            					return (
+              					<div key={i} class="container">
+                					<h4>{search.title}</h4>
+                				</div>
     						<div className="btn btn-primary btn-group-sm" role="group" aria-label="...">Save</div>
 
   						</div>
